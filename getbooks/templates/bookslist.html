@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>小说列表</title>
+</head>
+<body style="text-align:center;">
+
+<h1>小说列表</h1>
+{% for i in bookslist %}
+{{ i }}&nbsp;&nbsp;<a href="/downloadbook/{{i}}">下载</a>
+{% endfor %}
+</body>
+</html>
